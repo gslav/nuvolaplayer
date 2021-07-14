@@ -8,6 +8,8 @@ export PYTHONPATH="$PWD:$PYTHONPATH"
 export PATH="$PWD/build:$PATH"
 export XDG_DATA_DIRS="$PWD/build/share:$XDG_DATA_DIRS"
 export NUVOLA_LIBDIR="$PWD/build"
+export PULSE_PROP_OVERRIDE_application.name="NuvolaPlayer"
+export PULSE_PROP_OVERRIDE_application.icon-name="nuvolaplayer3"
 
 if [ -e /etc/fedora-release ]; then
     export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib64"
